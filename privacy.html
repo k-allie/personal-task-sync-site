@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="How Personal Task Sync accesses, uses, stores, and transfers task information and Google authorization tokens.">
+  <title>Privacy Policy — Personal Task Sync</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="wrap header-row"><a class="brand" href="index.html"><span class="mark" aria-hidden="true">⇄</span>Personal Task Sync</a><nav aria-label="Main navigation"><a href="index.html">About</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav></div></header>
+  <main id="main" class="wrap"><article class="document">
+    <div class="eyebrow">Personal Task Sync</div><h1>Privacy Policy</h1><p class="date">Effective October 19, 2026</p>
+    <p class="notice">Personal Task Sync is a utility operated by its account owner on a Mac to synchronize Google Tasks with Apple Reminders.</p>
+    <h2>Information accessed and purpose</h2>
+    <p>The utility accesses task lists and identifiers, task titles, notes, due dates, completion status, modification timestamps, and deletion indicators. It uses these records to create corresponding reminders or tasks, transfer edits, reconcile conflicts, and propagate confirmed deletions when enabled. It accesses the Mac's Reminders database through EventKit with macOS permission.</p>
+    <h2>Google authorization</h2>
+    <p>Google authorization uses OAuth. The utility stores access and refresh tokens locally on the Mac to support ongoing synchronization. It does not collect or store the Google account password.</p>
+    <h2>Local storage and retention</h2>
+    <p>Task identifiers and shared task fields are stored in local sync state. Recovery records can contain task snapshots from conflicts and deletions. Logs can contain task titles and operational errors. Authorization files, state, recovery records, and logs remain in the local project folder until the owner deletes them. Operational logs rotate; recovery history is retained until the owner removes or archives it.</p>
+    <h2>Data transfers and sharing</h2>
+    <p>The utility transfers task data between Google Tasks and the configured Apple Reminders store to perform the synchronization requested by the account owner. If that Reminders store belongs to a cloud account, its provider may synchronize the records under that account's settings and policies.</p>
+    <p>The utility does not upload task data or authorization tokens to this website or an application-operated server. It does not sell task data, use it for advertising, or send it to an AI model for training or inference.</p>
+    <h2>Google API data use</h2>
+    <p>Personal Task Sync's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements. Google API data is used only to provide the synchronization function described on this website.</p>
+    <h2>Your control and deletion choices</h2>
+    <p>You can stop synchronization by disabling the local login service, revoke Google access in your Google Account settings, and revoke Reminders permission in macOS Privacy &amp; Security settings.</p>
+    <p>To remove locally retained authorization and sync records, stop the service and delete the token, state, recovery, backup, and log files from the project folder. Deleting local records does not itself delete existing tasks in either app. Disable the service before removing sync state, since running without that state can cause duplicate imports.</p>
+    <h2>This public website</h2>
+    <p>This informational website is hosted by GitHub Pages. It has no task input forms, account sign-in, app analytics, advertising, or third-party scripts. GitHub may process visitor information when serving the site under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>. Task data and authorization tokens are not sent to this website by the utility.</p>
+    <h2>Contact</h2>
+    <p>For questions about the utility's data practices, use the developer support email displayed on the application's Google authorization screen.</p>
+  </article></main>
+  <footer><div class="wrap"><div class="footer-row"><a href="index.html">Personal Task Sync</a><div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div></div><p class="footnote">An independent personal utility. Not affiliated with or endorsed by Google or Apple.</p></div></footer>
+</body>
+</html>
