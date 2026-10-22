@@ -2,44 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Personal Task Sync keeps Google Tasks and Apple Reminders in matching lists using a utility running on your Mac.">
-  <title>Personal Task Sync — Google Tasks and Apple Reminders</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about Personal Task Sync, a personal utility for syncing Google Tasks with Apple Reminders.">
+  <title>Personal Task Sync</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header><div class="wrap header-row">
-    <a class="brand" href="index.html"><span class="mark" aria-hidden="true">⇄</span>Personal Task Sync</a>
-    <nav aria-label="Main navigation"><a href="index.html" aria-current="page">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
-  </div></header>
-  <main id="main" class="wrap">
-    <section class="hero" aria-labelledby="title">
-      <div class="eyebrow">A personal utility for macOS</div>
-      <h1 id="title">Your tasks.<br>In both places.</h1>
-      <p class="lead">Personal Task Sync keeps Google Tasks and Apple Reminders together, with matching lists and changes that flow both ways.</p>
-    </section>
-    <div class="flow" aria-label="Google Tasks synchronizes through the utility on your Mac with Apple Reminders">
-      <div class="flow-item"><strong>Google Tasks</strong><small>Your existing task lists</small></div>
-      <span class="arrow" aria-hidden="true">⇄</span>
-      <div class="flow-item"><strong>Your Mac</strong><small>The sync runs here</small></div>
-      <span class="arrow" aria-hidden="true">⇄</span>
-      <div class="flow-item"><strong>Apple Reminders</strong><small>Matching native lists</small></div>
-    </div>
-    <div class="sections">
-      <section><h2>Keep the list structure.</h2><p>Google lists are paired with matching lists in Reminders. Tasks stay connected through their identifiers, so edits return to the correct list. New reminders in a paired list can create tasks in its Google counterpart.</p></section>
-      <section><h2>Change either copy.</h2><p>Titles, notes, due dates, and completion can sync both ways. The utility checks Google periodically and reacts to Reminders changes. Confirmed deletions can propagate when enabled.</p></section>
-      <section><h2>Runs on your Mac.</h2><p>The local utility performs synchronization while the Mac is awake, online, and signed in. It requires Google authorization and macOS Reminders permission. This public website provides information; it does not run the sync or receive task data.</p></section>
-      <section><h2>Know what is shared.</h2><p>Task pairings, authorization tokens, recovery records, and logs are stored locally. Changes pass between Google Tasks and your configured Reminders store. Recurrence, attachments, alerts, and subtask relationships are not fully transferred.</p></section>
-    </div>
-    <section class="access" aria-labelledby="access-title">
-      <div class="eyebrow">Google authorization</div>
-      <h2 id="access-title">Why task access is requested</h2>
-      <p>Personal Task Sync requests permission to view, create, edit, and delete Google Tasks so it can synchronize your own records. It uses Google's OAuth sign-in screen and does not ask for or store your Google password.</p>
-      <p>The requested scope is <code>https://www.googleapis.com/auth/tasks</code>. This permission applies to task data in the authorized Google account. The utility uses it for the synchronization described here.</p>
-      <p>Read the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>. For questions, use the developer support email shown on the application's Google authorization screen.</p>
-    </section>
+  <nav aria-label="Main navigation">
+    <a href="index.html" aria-current="page">About</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </nav>
+  <main id="main">
+    <h1>Personal Task Sync</h1>
+    <p>Personal Task Sync is a personal utility that runs on my Mac to synchronize Google Tasks with Apple Reminders. It is for my own use.</p>
+    <p>This website provides application information, a privacy policy, and terms for the Google authorization process.</p>
+    <h2>What it does</h2>
+    <p>The utility pairs Google task lists with Apple Reminders lists and synchronizes task titles, notes, due dates, and completion status. Confirmed deletions can also sync when enabled. Some features, including recurrence, attachments, alerts, and subtask relationships, are not fully transferred.</p>
+    <h2>Google account access</h2>
+    <p>The utility requests permission to view, create, edit, and delete Google Tasks using the scope <code>https://www.googleapis.com/auth/tasks</code>. This access is used to synchronize tasks with Apple Reminders.</p>
+    <p>Authorization uses Google's OAuth sign-in screen. The utility does not ask for or store a Google password.</p>
+    <h2>Where data is handled</h2>
+    <p>Synchronization runs locally on my Mac and requires macOS Reminders permission. Authorization tokens, sync records, recovery records, and logs are stored locally. Task data passes between Google Tasks and the configured Reminders store; this website does not receive it.</p>
+    <h2>Contact</h2>
+    <p>For questions, use the developer support email displayed on the application's Google authorization screen.</p>
   </main>
-  <footer><div class="wrap"><div class="footer-row"><span>Personal Task Sync · Runs on your Mac</span><div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div></div><p class="footnote">An independent personal utility. Not affiliated with or endorsed by Google or Apple.</p></div></footer>
+  <footer>
+    <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+    <p>Not affiliated with or endorsed by Google or Apple.</p>
+  </footer>
 </body>
 </html>
